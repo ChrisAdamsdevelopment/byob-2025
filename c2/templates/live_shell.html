@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Live Shell - Bot {{ bot_id }}</h2>
+<input id="cmd" placeholder="Enter command" class="bg-gray-800 p-2 w-full" />
+<pre id="output" class="mt-4 bg-black p-4 h-64 overflow-y-scroll"></pre>
+<script>
+let ws = new WebSocket("wss://your-server/ws/{{ bot_id }}");
+ws.onmessage = e => {
+    document.getElementById("output").textContent += "\n" + e.data;
+};
+document.getElementById("cmd").addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+        ws.send(e.target.value);
+        e.target.value = "";
+    }
+});
+</script>
+{% endblock %}

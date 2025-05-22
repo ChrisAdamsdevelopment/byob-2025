@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-xl mb-4">Decryption Audit Log</h2>
+<table class="table-auto w-full text-left bg-gray-800 text-white border border-gray-700">
+    <thead>
+        <tr class="bg-gray-700">
+            <th class="p-2">Bot ID</th>
+            <th class="p-2">File</th>
+            <th class="p-2">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr class="border-t border-gray-600">
+            <td class="p-2">{{ log.bot_id }}</td>
+            <td class="p-2">{{ log.filename }}</td>
+            <td class="p-2">{{ log.status }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

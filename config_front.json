@@ -1,0 +1,5 @@
+{
+  "front_domain": "cdn.cloudflare.com",
+  "spoofed_host": "hidden-c2.internal",
+  "local_forward": "127.0.0.1:8000"
+}
