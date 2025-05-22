@@ -68,19 +68,23 @@ OBLIVION/
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
 ```
 
 ```bash
 python3 builder/campaign_builder.py
+
 ```
 
 ```bash
 python3 c2/server.py
+
 ```
 
 ```bash
 cd forge_panel
 python3 app.py
+
 ```
 
 Then open your browser and go to:
