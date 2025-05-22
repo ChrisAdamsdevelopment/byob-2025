@@ -6,7 +6,7 @@
 OBLIVION is a modular, stealth-focused offensive security suite designed for red team operations, adversary emulation, and payload delivery automation. Built for maximum flexibility and evasion, it offers polymorphic stagers, encrypted payloads, in-memory loaders, and a real-time WebSocket C2 infrastructure.
 
 ---
-
+---
 ## ⚔️ Capabilities
 
 ### 🛠️ Payload Forge Engine
@@ -41,10 +41,10 @@ OBLIVION is a modular, stealth-focused offensive security suite designed for red
 - AMSI & ETW bypasses with syscall patching
 - Randomized identifier mutation + junk logic injection
 - Fileless HTA/Powershell delivery vectors (`mshta.exe` support)
-
-
+---
+---
 ## 🗂️ Project Structure
-
+---
 
 ```text
 OBLIVION/
@@ -56,13 +56,13 @@ OBLIVION/
 ├── utils/             # AES, evasion, and memory execution helpers
 ├── build/             # Auto-generated payloads
 └── README.md
+---
 
-
-
+---
 ## 🚀 Quick Start
 
 ### 🔧 Set Up the Environment
-
+---
 
 
 ```bash
