@@ -42,11 +42,9 @@ OBLIVION is a modular, stealth-focused offensive security suite designed for red
 - Randomized identifier mutation + junk logic injection
 - Fileless HTA/Powershell delivery vectors (`mshta.exe` support)
 
----
 
 ## 🗂️ Project Structure
 
----
 
 ```text
 OBLIVION/
