@@ -47,19 +47,26 @@ OBLIVION is a modular, stealth-focused offensive security suite designed for red
 
 
 OBLIVION/
-├── builder/           # Payload forge, obfuscator, mutator
+├── builder/           
+# Payload forge, obfuscator, mutator
 
-├── c2/                # FastAPI C2 server, WebSocket manager
+├── c2/                
+# FastAPI C2 server, WebSocket manager
 
-├── client/            # Stager stubs, plugin code
+├── client/            
+# Stager stubs, plugin code
 
-├── stager/            # PyQt5 decoy installers, HTA generator
+├── stager/            
+# PyQt5 decoy installers, HTA generator
 
-├── forge_panel/       # Web-based payload builder UI
+├── forge_panel/       
+# Web-based payload builder UI
 
-├── utils/             # AES, evasion, and memory execution helpers
+├── utils/             
+# AES, evasion, and memory execution helpers
 
-├── build/             # Auto-generated payloads
+├── build/             
+# Auto-generated payloads
 
 └── README.md
 
