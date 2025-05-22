@@ -45,7 +45,7 @@ OBLIVION is a modular, stealth-focused offensive security suite designed for red
 ## 🗂️ Project Structure
 
 
-```text
+
 OBLIVION/
 ├── builder/           # Payload forge, obfuscator, mutator
 ├── c2/                # FastAPI C2 server, WebSocket manager
@@ -55,7 +55,7 @@ OBLIVION/
 ├── utils/             # AES, evasion, and memory execution helpers
 ├── build/             # Auto-generated payloads
 └── README.md
----
+
 
 
 ## 🚀 Quick Start
