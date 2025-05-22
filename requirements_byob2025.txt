@@ -1,0 +1,6 @@
+fastapi
+flask
+pyautogui
+pycryptodome
+pyperclip
+uvicorn
