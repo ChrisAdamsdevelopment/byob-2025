@@ -1,0 +1,25 @@
+[project]
+name = "gem-workflow"
+version = "1.4.1"
+description = "Deterministic, version-locked multi-agent workflow CLI for Gem Alpha/Beta/Gamma."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Gem Workflow Contributors" }
+]
+dependencies = [
+  "typer>=0.12.3",
+  "jsonschema>=4.22.0",
+  "python-dateutil>=2.9.0",
+]
+
+[project.scripts]
+gemflow = "gem_workflow.cli.main:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
